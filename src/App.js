@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Fragment, useState } from "react";
+import Form from "./Components/Form";
 
 function App() {
+  const [num, setNum] = useState(0);
+  const [genNum, setGenNum] = useState("Generate a number!");
+
+  const submit = (e) => {
+    e.preventDefault();
+  };
+
+  const generator = (num) => {
+    setGenNum(Math.trunc(Math.random() * num) + 1);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Form
+        value={num}
+        submitHandler={submit}
+        clickHandler={() => {
+          generator(num);
+        }}
+        changeHandler={(e) => setNum(e.target.value)}
+        genNum={genNum}
+      />
+    </Fragment>
   );
 }
 
