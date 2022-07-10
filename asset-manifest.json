@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/number-generator/static/css/main.c5b1da8b.css",
+    "main.js": "/number-generator/static/js/main.f0e19ab3.js",
+    "static/js/787.69917681.chunk.js": "/number-generator/static/js/787.69917681.chunk.js",
+    "index.html": "/number-generator/index.html",
+    "main.c5b1da8b.css.map": "/number-generator/static/css/main.c5b1da8b.css.map",
+    "main.f0e19ab3.js.map": "/number-generator/static/js/main.f0e19ab3.js.map",
+    "787.69917681.chunk.js.map": "/number-generator/static/js/787.69917681.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5b1da8b.css",
+    "static/js/main.f0e19ab3.js"
+  ]
+}
